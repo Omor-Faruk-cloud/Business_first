@@ -160,8 +160,6 @@
 
 /* Banner End  */
 /* About us Start  */
-.about_us {}
-
 .about_us h1 {
     font-size: 36px;
     font-weight: bold;
@@ -277,18 +275,75 @@
     padding-right: 6%;
     text-align: right;
 
-}.white .right p{
+}
+
+.white .right p {
     padding-left: 21%;
     font-size: 13.5px;
     padding-right: 0 !important;
     text-align: right;
 }
-.img-align{
+
+.img-align {
     position: relative;
 }
-.step-align{
+
+.step-align {
     position: absolute;
     left: -50px;
 }
 
 /* Approach End  */
+/* Works Start  */
+.works{
+    background-color: #de2b24;
+    color: #fff;
+}
+.works h1{
+    font-size: 36px;
+    padding-top: 3%;
+    font-weight: bold;
+}
+.works p{
+    font-size: 20px;
+    font-weight: lighter;
+    position: relative;
+}
+.works p::after{
+    content: '';
+    background-color: #fff;
+    width: 0%;
+    height: 4px;
+    top: 132%;
+    left: 48%;
+    position: absolute;
+    transition: .4s all ease-in-out;
+}
+.works:hover.works p::after{
+    width: 5%;
+}
+.project{
+    background-color: #f35e59;
+}
+.project i{
+    color: #f9afac;
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+.project h3{
+    font-size: 26px;
+    font-weight: bold;
+}
+.project h4{
+    font-size: 16px;
+}
+.project-1{
+    padding-top: 22%;
+}
+.project .col-md-3{
+    
+padding-right: 0;
+    
+padding-left: 0;
+}
+/* Works End  */

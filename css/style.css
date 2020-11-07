@@ -177,7 +177,8 @@
     content: '';
     position: absolute;
     bottom: 1%;
-    left: 45%;
+    left: 50%;
+    transform: translateX(-50%);
     width: 0%;
     height: 4px;
     background-color: #424242;
@@ -228,7 +229,7 @@
 .step {
     position: absolute;
     top: 50%;
-    right: -35px;
+    right: -30px;
     transform: translateY(-50%);
     background-color: #de2b24;
     color: #fff;
@@ -290,60 +291,280 @@
 
 .step-align {
     position: absolute;
-    left: -50px;
+    left: -52px;
 }
 
 /* Approach End  */
 /* Works Start  */
-.works{
+.works {
     background-color: #de2b24;
     color: #fff;
 }
-.works h1{
+
+.works h1 {
     font-size: 36px;
     padding-top: 3%;
     font-weight: bold;
 }
-.works p{
+
+.works p {
     font-size: 20px;
     font-weight: lighter;
     position: relative;
 }
-.works p::after{
+
+.works p::after {
     content: '';
     background-color: #fff;
     width: 0%;
     height: 4px;
     top: 132%;
-    left: 48%;
+    left: 50%;
+    transform: translateX(-50%);
     position: absolute;
     transition: .4s all ease-in-out;
 }
-.works:hover.works p::after{
+
+.works:hover.works p::after {
     width: 5%;
 }
-.project{
+
+.project {
     background-color: #f35e59;
 }
-.project i{
+
+.project i {
     color: #f9afac;
     font-size: 50px;
     padding-bottom: 20px;
 }
-.project h3{
+
+.project h3 {
     font-size: 26px;
     font-weight: bold;
 }
-.project h4{
+
+.project h4 {
     font-size: 16px;
 }
-.project-1{
+
+.project-1 {
     padding-top: 22%;
 }
-.project .col-md-3{
-    
-padding-right: 0;
-    
-padding-left: 0;
-}
+
 /* Works End  */
+/* Contact Start  */
+.contact {
+    background-color: #1287bf;
+    padding: 100px;
+}
+
+.contact h1 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.contact p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.btn-icon {
+    color: #fff;
+    padding: 0;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.btn-icon:hover {
+    color: #fff;
+}
+
+
+.card-body p {
+    color: #c1c1c1;
+    font-size: 15px;
+    /* padding-right: 19%; */
+    padding: 18px 10px;
+}
+
+.card-body .form-control {
+    width: 70%;
+    margin: auto;
+}
+.card-body .form-control::placeholder{
+    color: #dadada;
+    padding-left: 10px !important;
+}
+
+#contact {
+    position: relative;
+}
+
+.btn-close {
+    position: absolute;
+    top: -15px;
+    right: -18px;
+    background: #de2b24;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.before {
+    position: relative;
+    transition: 0s all ease-in-out;
+}
+
+.before::before {
+    position: absolute;
+    content: '';
+    height: 0px;
+    width: 0px;
+    border-style: solid;
+    border-width: 0 30px 30px 30px;
+    border-color: transparent transparent #fff transparent;
+    z-index: 1;
+    left: 50%;
+    top: -29px;
+    transform: translateX(-50%);
+}
+
+/* Contact End  */
+
+/* Get in Touch Start  */
+
+
+.get_in_touch {
+    background-color: #2a2a2a;
+}
+
+.get_in_touch h1 {
+    color: #fff;
+    font-size: 29px;
+    font-weight: bold;
+}
+
+.get_in_touch ul {
+    display: flex;
+    list-style: none;
+    margin-right: 31%;
+}
+
+.get_in_touch ul li {
+    margin-right: 10%;
+    font-size: 20px;
+    /* color: #fff; */
+}
+
+.get_in_touch ul li i {
+    color: #fff;
+    /* padding: 4%; */
+}
+
+.get_in_touch p {
+    color: #cecece;
+    font-size: 14px;
+}
+
+.get_in_touch .form-group input[type=email] {
+    background-color: #515151;
+    border: none;
+    border-radius: 0;
+    padding: 25px;
+
+}
+
+.form-group input[type=email]::placeholder {
+    color: #afafaf;
+    font-size: 14px;
+}
+
+.Subscribe {
+    margin-left: 40%;
+}
+
+.btn-primary {
+    padding: 12px 39px !important;
+    border: 2px solid #515151 !important;
+    border-radius: none;
+    background-color: transparent;
+}
+
+.btn-primary:hover {
+    background-color: #de2b24;
+    border-color: #de2b24 !important;
+}
+
+.fb2 {
+    border: 2px solid #515151;
+    padding: 6% 8%;
+    transition: .4s all ease-in-out;
+}
+
+.fb2:hover {
+    border: 2px solid #de2b24;
+}
+
+.tw2 {
+    border: 2px solid #515151;
+    padding: 6% 7%;
+    transition: .4s all ease-in-out;
+}
+
+.tw2:hover {
+    border: 2px solid #de2b24;
+}
+
+.plus {
+    padding: 5% 6%;
+    border: 2px solid #515151;
+    transition: .4s all ease-in-out;
+}
+
+.plus:hover {
+    border: 2px solid #de2b24;
+}
+
+.link {
+    border: 2px solid #515151;
+    padding: 6% 7%;
+    transition: .4s all ease-in-out;
+}
+
+.link:hover {
+    border: 2px solid #de2b24;
+}
+.get_in_touch .form-control{
+    background-color: #fff;
+    color: #fff;
+}
+
+
+/* Get in Touch End  */
+
+/* Footer Start  */
+footer {
+    background-color: #515151;
+}
+
+footer p {
+    color: #cecece;
+    font-size: 14px;
+    padding-top: 2%;
+}
+
+/* Footer End  */

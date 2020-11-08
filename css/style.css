@@ -400,7 +400,8 @@
     width: 70%;
     margin: auto;
 }
-.card-body .form-control::placeholder{
+
+.card-body .form-control::placeholder {
     color: #dadada;
     padding-left: 10px !important;
 }
@@ -466,13 +467,27 @@
 
 .get_in_touch ul li {
     margin-right: 10%;
-    font-size: 20px;
-    /* color: #fff; */
+    font-size: 22px;
+    border: 2px solid #515151;
+    transition: .4s all ease-in-out;
+    color: #fff;
 }
+
+.get_in_touch ul li:hover {
+    border: 2px solid #de2b24;
+}
+
 
 .get_in_touch ul li i {
     color: #fff;
-    /* padding: 4%; */
+    text-align: center;
+}
+
+.get_in_touch ul li a {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
 }
 
 .get_in_touch p {
@@ -502,6 +517,7 @@
     border: 2px solid #515151 !important;
     border-radius: none;
     background-color: transparent;
+    transition: .4s all ease-in-out;
 }
 
 .btn-primary:hover {
@@ -509,46 +525,7 @@
     border-color: #de2b24 !important;
 }
 
-.fb2 {
-    border: 2px solid #515151;
-    padding: 6% 8%;
-    transition: .4s all ease-in-out;
-}
-
-.fb2:hover {
-    border: 2px solid #de2b24;
-}
-
-.tw2 {
-    border: 2px solid #515151;
-    padding: 6% 7%;
-    transition: .4s all ease-in-out;
-}
-
-.tw2:hover {
-    border: 2px solid #de2b24;
-}
-
-.plus {
-    padding: 5% 6%;
-    border: 2px solid #515151;
-    transition: .4s all ease-in-out;
-}
-
-.plus:hover {
-    border: 2px solid #de2b24;
-}
-
-.link {
-    border: 2px solid #515151;
-    padding: 6% 7%;
-    transition: .4s all ease-in-out;
-}
-
-.link:hover {
-    border: 2px solid #de2b24;
-}
-.get_in_touch .form-control{
+.get_in_touch .form-control {
     background-color: #fff;
     color: #fff;
 }
